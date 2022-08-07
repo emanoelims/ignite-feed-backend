@@ -46,4 +46,12 @@ class ContentTest {
         assertEquals(1, content.anchorCount());
     }
 
+    @Test
+    @DisplayName("should add more than one anchor")
+    void shouldAddMoreThanOneAnchor() {
+        var content = new Content();
+        content.addAnchor("clique aqui para saber mais");
+        content.addAnchor("ou clique aqui");
+        assertEquals(2, content.anchorCount());
+    }
 }
