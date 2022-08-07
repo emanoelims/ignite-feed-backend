@@ -20,7 +20,7 @@ class PostTest {
     @Test
     @DisplayName("should not create post without content")
     void shouldNotCreatePostWithoutContent() {
-        var author = new User("User");
+        var author = new User("User", "CEO");
         var publicationDate = LocalDateTime.now();
         assertThrows(NullPointerException.class, () -> new Post(author, null, publicationDate));
     }
@@ -28,7 +28,7 @@ class PostTest {
     @Test
     @DisplayName("should not create post without publication date")
     void shouldNotCreatePostWithoutPublicationDate() {
-        var author = new User("User");
+        var author = new User("User", "CEO");
         var content = new Content();
         assertThrows(NullPointerException.class, () -> new Post(author, content, null));
     }
