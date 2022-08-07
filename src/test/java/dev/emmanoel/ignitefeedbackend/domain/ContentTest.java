@@ -30,4 +30,13 @@ class ContentTest {
         content.addParagraph("Hoje vamos aprender mais sobre DDD e Clean Arch");
         assertEquals(2, content.paragraphCount());
     }
+
+    @Test
+    @DisplayName("should add an anchor to the Content")
+    void shouldAddAnAnchorToTheContent() {
+        var content = new Content();
+        content.addAnchor("clique aqui para saber mais");
+        assertEquals(1, content.anchorCount());
+    }
+
 }
