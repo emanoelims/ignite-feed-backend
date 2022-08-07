@@ -10,6 +10,14 @@ class PostTest {
     @Test
     @DisplayName("should not create post without author")
     void shouldNotCreatePostWithoutAuthor() {
-        assertThrows(NullPointerException.class, () -> new Post(null));
+        var content = new Content();
+        assertThrows(NullPointerException.class, () -> new Post(null, content));
+    }
+
+    @Test
+    @DisplayName("should not create post without content")
+    void shouldNotCreatePostWithoutContent() {
+        var author = new User();
+        assertThrows(NullPointerException.class, () -> new Post(author, null));
     }
 }
