@@ -1,10 +1,7 @@
 package dev.emmanoel.ignitefeedbackend.domain;
 
 
-import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Content {
     private final Map<ContentType, List<String>> contents = new EnumMap<>(ContentType.class);
@@ -31,5 +28,9 @@ public class Content {
 
     public int anchorCount() {
         return contents.getOrDefault(ContentType.ANCHOR, new ArrayList<>()).size();
+    }
+
+    public Map<ContentType, List<String>> getContents() {
+        return Collections.unmodifiableMap(contents);
     }
 }
