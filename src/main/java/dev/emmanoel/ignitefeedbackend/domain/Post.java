@@ -8,7 +8,7 @@ public class Post {
     private final Content content;
     private final LocalDateTime publicationDate;
 
-    public Post(final User author, final Content content, LocalDateTime publicationDate) {
+    public Post(final User author, final Content content, final LocalDateTime publicationDate) {
         this.author = Objects.requireNonNull(author);
         this.content = Objects.requireNonNull(content);
         this.publicationDate = Objects.requireNonNull(publicationDate);
