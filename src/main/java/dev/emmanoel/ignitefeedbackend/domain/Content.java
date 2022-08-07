@@ -9,7 +9,7 @@ import java.util.Map;
 public class Content {
     private final Map<ContentType, List<String>> contents = new EnumMap<>(ContentType.class);
 
-    public void addParagraph(String paragraph) {
+    public void addParagraph(final String paragraph) {
         if (paragraph.isBlank()) {
             throw new IllegalArgumentException();
         }
@@ -21,7 +21,7 @@ public class Content {
         return contents.getOrDefault(ContentType.PARAGRAPH, new ArrayList<>()).size();
     }
 
-    public void addAnchor(String anchor) {
+    public void addAnchor(final String anchor) {
         if (anchor.isBlank()) {
             throw new IllegalArgumentException();
         }
