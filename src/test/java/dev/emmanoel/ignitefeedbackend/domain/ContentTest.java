@@ -54,4 +54,14 @@ class ContentTest {
         content.addAnchor("ou clique aqui");
         assertEquals(2, content.anchorCount());
     }
+
+    @Test
+    @DisplayName("should return a map of the contents")
+    void shouldReturnAMapOfTheContents() {
+        var content = new Content();
+        content.addParagraph("Ola pessoal, tudo joia?");
+        content.addAnchor("Clique aqui para acessar nosso canal");
+        assertTrue(content.getContents().containsKey(ContentType.PARAGRAPH));
+        assertTrue(content.getContents().containsKey(ContentType.ANCHOR));
+    }
 }
