@@ -10,6 +10,9 @@ public class Content {
     private final Map<ContentType, List<String>> contents = new EnumMap<>(ContentType.class);
 
     public void addParagraph(String paragraph) {
+        if (paragraph.isBlank()) {
+            throw new IllegalArgumentException();
+        }
         contents.put(ContentType.PARAGRAPH, List.of(paragraph));
     }
 
