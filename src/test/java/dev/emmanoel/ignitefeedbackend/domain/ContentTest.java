@@ -8,6 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class ContentTest {
 
     @Test
+    @DisplayName("should not add blank paragraph")
+    void shouldNotAddBlankParagraphToTheContent() {
+        var content = new Content();
+        assertThrows(IllegalArgumentException.class, () -> content.addParagraph(""));
+    }
+
+    @Test
     @DisplayName("should add a paragraph to the Content")
     void shouldAddAParagraphToTheContent() {
         var content = new Content();
