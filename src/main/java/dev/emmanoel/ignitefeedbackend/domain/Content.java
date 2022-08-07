@@ -22,6 +22,9 @@ public class Content {
     }
 
     public void addAnchor(String anchor) {
+        if (anchor.isBlank()) {
+            throw new IllegalArgumentException();
+        }
         contents.computeIfAbsent(ContentType.ANCHOR, contentType -> new ArrayList<>())
             .add(anchor);
     }
