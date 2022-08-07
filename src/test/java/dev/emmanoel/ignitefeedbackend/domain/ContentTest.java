@@ -32,6 +32,13 @@ class ContentTest {
     }
 
     @Test
+    @DisplayName("should not add blank anchor")
+    void shouldNotAddBlankAnchorToTheContent() {
+        var content = new Content();
+        assertThrows(IllegalArgumentException.class, () -> content.addAnchor(""));
+    }
+
+    @Test
     @DisplayName("should add an anchor to the Content")
     void shouldAddAnAnchorToTheContent() {
         var content = new Content();
