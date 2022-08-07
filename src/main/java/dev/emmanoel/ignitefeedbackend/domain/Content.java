@@ -13,7 +13,8 @@ public class Content {
         if (paragraph.isBlank()) {
             throw new IllegalArgumentException();
         }
-        contents.put(ContentType.PARAGRAPH, List.of(paragraph));
+        contents.computeIfAbsent(ContentType.PARAGRAPH, contentType -> new ArrayList<>())
+            .add(paragraph);
     }
 
     public int paragraphCount() {
