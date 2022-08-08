@@ -3,7 +3,7 @@ package dev.emmanoel.ignitefeedbackend.domain;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Post {
+public class Post extends AbstractEntity {
     private final User author;
     private final Content content;
     private final LocalDateTime publicationDate;
