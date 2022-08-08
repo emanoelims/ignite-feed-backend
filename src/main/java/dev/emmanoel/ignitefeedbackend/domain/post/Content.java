@@ -1,5 +1,7 @@
-package dev.emmanoel.ignitefeedbackend.domain;
+package dev.emmanoel.ignitefeedbackend.domain.post;
 
+
+import dev.emmanoel.ignitefeedbackend.domain.AbstractEntity;
 
 import java.util.*;
 

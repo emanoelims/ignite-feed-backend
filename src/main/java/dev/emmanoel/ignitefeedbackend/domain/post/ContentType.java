@@ -1,4 +1,4 @@
-package dev.emmanoel.ignitefeedbackend.domain;
+package dev.emmanoel.ignitefeedbackend.domain.post;
 
 public enum ContentType {
     PARAGRAPH,

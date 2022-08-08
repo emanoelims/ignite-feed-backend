@@ -1,9 +1,13 @@
-package dev.emmanoel.ignitefeedbackend.domain;
+package dev.emmanoel.ignitefeedbackend.domain.post;
+
+import dev.emmanoel.ignitefeedbackend.domain.AbstractEntity;
+import dev.emmanoel.ignitefeedbackend.domain.IAggregateRoot;
+import dev.emmanoel.ignitefeedbackend.domain.user.User;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Post extends AbstractEntity {
+public class Post extends AbstractEntity implements IAggregateRoot {
     private final User author;
     private final Content content;
     private final LocalDateTime publicationDate;
