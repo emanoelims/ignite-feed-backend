@@ -1,8 +1,11 @@
-package dev.emmanoel.ignitefeedbackend.domain;
+package dev.emmanoel.ignitefeedbackend.domain.user;
+
+import dev.emmanoel.ignitefeedbackend.domain.AbstractEntity;
+import dev.emmanoel.ignitefeedbackend.domain.IAggregateRoot;
 
 import java.util.Objects;
 
-public class User extends AbstractEntity {
+public class User extends AbstractEntity implements IAggregateRoot {
     private final String name;
     private final String role;
 

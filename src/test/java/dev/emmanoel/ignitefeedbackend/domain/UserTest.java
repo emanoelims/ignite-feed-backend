@@ -1,5 +1,6 @@
 package dev.emmanoel.ignitefeedbackend.domain;
 
+import dev.emmanoel.ignitefeedbackend.domain.user.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
