@@ -3,7 +3,7 @@ package dev.emmanoel.ignitefeedbackend.domain;
 
 import java.util.*;
 
-public class Content {
+public class Content extends AbstractEntity {
     private final Map<ContentType, List<String>> contents = new EnumMap<>(ContentType.class);
 
     public void addParagraph(final String paragraph) {

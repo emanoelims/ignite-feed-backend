@@ -2,7 +2,7 @@ package dev.emmanoel.ignitefeedbackend.domain;
 
 import java.util.Objects;
 
-public class User {
+public class User extends AbstractEntity {
     private final String name;
     private final String role;
 
