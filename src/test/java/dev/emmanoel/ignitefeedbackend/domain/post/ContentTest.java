@@ -1,7 +1,5 @@
-package dev.emmanoel.ignitefeedbackend.domain;
+package dev.emmanoel.ignitefeedbackend.domain.post;
 
-import dev.emmanoel.ignitefeedbackend.domain.post.Content;
-import dev.emmanoel.ignitefeedbackend.domain.post.ContentType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
