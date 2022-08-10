@@ -27,7 +27,7 @@ public class CreatePost {
             .entrySet()
             .stream()
             .collect(Collectors.toMap(e -> ContentType.valueOf(e.getKey().toUpperCase()), Map.Entry::getValue));
-        var post = new Post(author, new Content(contents), input.publicationDate());
+        var post = new Post(author.getId(), new Content(contents), input.publicationDate());
         postRepo.save(post);
         return new CreatePostOutput(post.getId());
     }
