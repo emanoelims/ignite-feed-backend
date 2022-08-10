@@ -1,6 +1,6 @@
-package dev.emmanoel.ignitefeedbackend.application;
+package dev.emmanoel.ignitefeedbackend.application.post;
 
-import dev.emmanoel.ignitefeedbackend.application.getposts.GetPosts;
+import dev.emmanoel.ignitefeedbackend.application.post.getall.GetPosts;
 import dev.emmanoel.ignitefeedbackend.domain.post.Content;
 import dev.emmanoel.ignitefeedbackend.domain.post.Post;
 import dev.emmanoel.ignitefeedbackend.domain.post.PostRepository;

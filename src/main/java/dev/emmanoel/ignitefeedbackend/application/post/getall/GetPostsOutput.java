@@ -1,4 +1,4 @@
-package dev.emmanoel.ignitefeedbackend.application.getposts;
+package dev.emmanoel.ignitefeedbackend.application.post.getall;
 
 import java.time.LocalDateTime;
 import java.util.List;

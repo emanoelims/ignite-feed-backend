@@ -1,7 +1,7 @@
-package dev.emmanoel.ignitefeedbackend.application;
+package dev.emmanoel.ignitefeedbackend.application.post;
 
-import dev.emmanoel.ignitefeedbackend.application.createpost.CreatePost;
-import dev.emmanoel.ignitefeedbackend.application.createpost.CreatePostInput;
+import dev.emmanoel.ignitefeedbackend.application.post.create.CreatePost;
+import dev.emmanoel.ignitefeedbackend.application.post.create.CreatePostInput;
 import dev.emmanoel.ignitefeedbackend.domain.post.PostRepository;
 import dev.emmanoel.ignitefeedbackend.domain.user.User;
 import dev.emmanoel.ignitefeedbackend.domain.user.UserRepository;
