@@ -1,4 +1,4 @@
-package dev.emmanoel.ignitefeedbackend.application.createpost;
+package dev.emmanoel.ignitefeedbackend.application.post.create;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;

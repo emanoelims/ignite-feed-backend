@@ -1,4 +1,4 @@
-package dev.emmanoel.ignitefeedbackend.application.createpost;
+package dev.emmanoel.ignitefeedbackend.application.post.create;
 
 import dev.emmanoel.ignitefeedbackend.domain.post.Content;
 import dev.emmanoel.ignitefeedbackend.domain.post.ContentType;
