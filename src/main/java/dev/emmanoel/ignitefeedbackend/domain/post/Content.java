@@ -6,7 +6,15 @@ import dev.emmanoel.ignitefeedbackend.domain.AbstractEntity;
 import java.util.*;
 
 public class Content extends AbstractEntity {
-    private final Map<ContentType, List<String>> contents = new EnumMap<>(ContentType.class);
+    private final Map<ContentType, List<String>> contents;
+
+    public Content() {
+        contents = new EnumMap<>(ContentType.class);
+    }
+
+    public Content(Map<ContentType, List<String>> contents) {
+        this.contents = new EnumMap<>(contents);
+    }
 
     public void addParagraph(final String paragraph) {
         if (paragraph.isBlank()) {
