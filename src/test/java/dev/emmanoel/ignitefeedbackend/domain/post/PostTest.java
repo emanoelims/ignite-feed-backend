@@ -1,10 +1,10 @@
 package dev.emmanoel.ignitefeedbackend.domain.post;
 
-import dev.emmanoel.ignitefeedbackend.domain.user.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -21,16 +21,16 @@ class PostTest {
     @Test
     @DisplayName("should not create post without content")
     void shouldNotCreatePostWithoutContent() {
-        var author = new User("User", "CEO");
+        var authorId = UUID.randomUUID();
         var publicationDate = LocalDateTime.now();
-        assertThrows(NullPointerException.class, () -> new Post(author, null, publicationDate));
+        assertThrows(NullPointerException.class, () -> new Post(authorId, null, publicationDate));
     }
 
     @Test
     @DisplayName("should not create post without publication date")
     void shouldNotCreatePostWithoutPublicationDate() {
-        var author = new User("User", "CEO");
+        var authorId = UUID.randomUUID();
         var content = new Content();
-        assertThrows(NullPointerException.class, () -> new Post(author, content, null));
+        assertThrows(NullPointerException.class, () -> new Post(authorId, content, null));
     }
 }
